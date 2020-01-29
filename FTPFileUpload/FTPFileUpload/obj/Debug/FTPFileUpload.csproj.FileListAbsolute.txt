@@ -1,0 +1,9 @@
+C:\Users\nouf\Documents\Visual Studio 2015\Projects\FTPFileUpload\FTPFileUpload\bin\Debug\FTPFileUpload.exe.config
+C:\Users\nouf\Documents\Visual Studio 2015\Projects\FTPFileUpload\FTPFileUpload\bin\Debug\FTPFileUpload.exe
+C:\Users\nouf\Documents\Visual Studio 2015\Projects\FTPFileUpload\FTPFileUpload\bin\Debug\FTPFileUpload.pdb
+C:\Users\nouf\Documents\Visual Studio 2015\Projects\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.csprojResolveAssemblyReference.cache
+C:\Users\nouf\Documents\Visual Studio 2015\Projects\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.Form1.resources
+C:\Users\nouf\Documents\Visual Studio 2015\Projects\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.Properties.Resources.resources
+C:\Users\nouf\Documents\Visual Studio 2015\Projects\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.csproj.GenerateResource.Cache
+C:\Users\nouf\Documents\Visual Studio 2015\Projects\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.exe
+C:\Users\nouf\Documents\Visual Studio 2015\Projects\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.pdb
