@@ -100,6 +100,8 @@ namespace FTPFileUpload
                     Stream ftpstream = ftp.GetRequestStream();
                     ftpstream.Write(buffer, 0, buffer.Length);
                     ftpstream.Close();
+
+                    DownloadFileFTP();
                 }
 
 
@@ -113,15 +115,15 @@ namespace FTPFileUpload
 
         private void DownloadFileFTP()
         {
-            string inputfilepath = @"C:\Temp\FileName.exe";
-            string ftphost = "xxx.xx.x.xxx";
-            string ftpfilepath = "/Updater/Dir1/FileName.exe";
+            string inputfilepath = @"D:\work\1.jpg";
+           // string ftphost = "xxx.xx.x.xxx";
+           // string ftpfilepath = "/Updater/Dir1/FileName.exe";
 
-            string ftpfullpath = "ftp://" + ftphost + ftpfilepath;
+            string ftpfullpath ="ftp://ftp.dlptest.com/1.jpg";
 
             using (WebClient request = new WebClient())
             {
-                request.Credentials = new NetworkCredential("UserName", "P@55w0rd");
+                request.Credentials = new NetworkCredential("dlpuser@dlptest.com", "SzMf7rTE4pCrf9dV286GuNe4N");
                 byte[] fileData = request.DownloadData(ftpfullpath);
 
                 using (FileStream file = File.Create(inputfilepath))
