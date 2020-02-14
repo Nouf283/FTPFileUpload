@@ -16,3 +16,12 @@ D:\work\New folder\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.csprojRes
 D:\work\New folder\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.Form1.resources
 D:\work\New folder\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.Properties.Resources.resources
 D:\work\New folder\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.csproj.GenerateResource.Cache
+D:\FTPFileUpload\FTPFileUpload\FTPFileUpload\bin\Debug\FTPFileUpload.exe.config
+D:\FTPFileUpload\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.exe
+D:\FTPFileUpload\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.pdb
+D:\FTPFileUpload\FTPFileUpload\FTPFileUpload\bin\Debug\FTPFileUpload.exe
+D:\FTPFileUpload\FTPFileUpload\FTPFileUpload\bin\Debug\FTPFileUpload.pdb
+D:\FTPFileUpload\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.csprojResolveAssemblyReference.cache
+D:\FTPFileUpload\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.Form1.resources
+D:\FTPFileUpload\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.Properties.Resources.resources
+D:\FTPFileUpload\FTPFileUpload\FTPFileUpload\obj\Debug\FTPFileUpload.csproj.GenerateResource.Cache

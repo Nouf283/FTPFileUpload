@@ -84,7 +84,7 @@ namespace FTPFileUpload
 
                     // file upload in FTP server.........................................
                     string filename = Path.GetFileName(file);
-                    string ftpfullpath = "ftp://ftp.dlptest.com/1.jpg";
+                    string ftpfullpath = "ftp://ftp.dlptest.com/test.txt";
                     FtpWebRequest ftp = (FtpWebRequest)FtpWebRequest.Create(ftpfullpath);
                     ftp.Credentials = new NetworkCredential("dlpuser@dlptest.com", "SzMf7rTE4pCrf9dV286GuNe4N");
 
@@ -92,7 +92,7 @@ namespace FTPFileUpload
                     ftp.UseBinary = true;
                     ftp.Method = WebRequestMethods.Ftp.UploadFile;
 
-                    FileStream fs = File.OpenRead(@"D:\1.jpg");
+                    FileStream fs = File.OpenRead(@"D:\work\test.txt");
                     byte[] buffer = new byte[fs.Length];
                     fs.Read(buffer, 0, buffer.Length);
                     fs.Close();
@@ -101,7 +101,7 @@ namespace FTPFileUpload
                     ftpstream.Write(buffer, 0, buffer.Length);
                     ftpstream.Close();
 
-                    DownloadFileFTP();
+                  //  DownloadFileFTP();
                 }
 
 
@@ -115,11 +115,11 @@ namespace FTPFileUpload
 
         private void DownloadFileFTP()
         {
-            string inputfilepath = @"D:\work\1.jpg";
+            string inputfilepath = @"D:\work\test.txt";
            // string ftphost = "xxx.xx.x.xxx";
            // string ftpfilepath = "/Updater/Dir1/FileName.exe";
 
-            string ftpfullpath ="ftp://ftp.dlptest.com/1.jpg";
+            string ftpfullpath = "ftp://ftp.dlptest.com/test.txt";
 
             using (WebClient request = new WebClient())
             {
@@ -132,6 +132,38 @@ namespace FTPFileUpload
                     file.Close();
                 }
                 MessageBox.Show("Download Complete");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // DownloadFileFTP();
+            //  string newtext = richTextBox1.Text;
+
+            //  string text = File.ReadAllText(@"D:\work\test.txt");
+            //  text = text.Replace(text, newtext );
+            ////  text = text.Replace("some text", "new value");
+            //  File.WriteAllText(@"D:\work\test.txt", text);
+
+            DeleteFile("ok");
+
+
+        }
+
+
+        private string DeleteFile(string fileName)
+
+        {
+            
+            //FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://www.server.com/" + fileName);
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://ftp.dlptest.com/test.txt");
+            request.Method = WebRequestMethods.Ftp.DeleteFile;
+            request.Credentials = new NetworkCredential("dlpuser@dlptest.com", "SzMf7rTE4pCrf9dV286GuNe4N");
+           // request.Credentials = new NetworkCredential("username", "password");
+
+            using (FtpWebResponse response = (FtpWebResponse)request.GetResponse())
+            {
+                return response.StatusDescription;
             }
         }
     }
